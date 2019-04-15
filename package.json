@@ -1,0 +1,22 @@
+{
+  "name": "qr-wifi",
+  "version": "0.1",
+  "description": "WiFi QR code generation CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qr",
+    "wifi",
+    "npx",
+    "cli"
+  ],
+  "author": "Johannes Wünsche",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "prompt": "^1.0.0",
+    "qrcode": "^1.3.3"
+  }
+}

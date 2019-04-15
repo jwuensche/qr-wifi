@@ -1,6 +1,6 @@
 {
   "name": "qr-wifi",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "WiFi QR code generation CLI",
   "main": "index.js",
   "scripts": {

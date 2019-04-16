@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "WiFi QR code generation CLI",
   "main": "index.js",
+  "bin": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

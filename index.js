@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var QR = require("qrcode");
 var prompt = require("prompt");
 var colors = require("colors");

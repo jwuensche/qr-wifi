@@ -7,7 +7,7 @@ var colors = require("colors");
 // WIFI:T:WPA;S:mynetwork;P:mypass;;
 
 escape = (content) => {
-  return content.replace("\", \\").replace(";", "\;").replace(",", "\,").replace(":", "\:");
+    return content.replace("\", \\").replace(";", "\;").replace(",", "\,").replace(":", "\:");
 }
 
 authCheck = (auth) => {
@@ -64,5 +64,5 @@ prompt.get(schema, (err, result) => {
   if (err) {
     return
   }
-  generate(result.authentication, result.ssid, result.pass, result.hidden);
+  generate(result.authentication, result.ssid, result.password, result.hidden);
 });

@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node index.js"
   },
   "keywords": [
     "qr",
@@ -13,11 +13,11 @@
     "npx",
     "cli"
   ],
-  "author": "Johannes Wünsche",
+  "author": "Johannes Wünsche <johannes@spacesnek.rocks>",
   "license": "GPL-3.0",
   "dependencies": {
-    "colors": "^1.3.3",
+    "colors": "^1.4.0",
     "prompt": "^1.0.0",
-    "qrcode": "^1.3.3"
+    "qrcode": "^1.4.4"
   }
 }

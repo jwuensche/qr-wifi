@@ -7,7 +7,7 @@ var colors = require("colors");
 // WIFI:T:WPA;S:mynetwork;P:mypass;;
 
 escape = (content) => {
-    return content.replace("\", \\").replace(";", "\;").replace(",", "\,").replace(":", "\:");
+    return content.replace("\", \\").replace(";", "\;").replace(",", "\,").replace(":", "\:").replace('"', '\"');
 }
 
 authCheck = (auth) => {
@@ -24,9 +24,7 @@ generate = (auth, ssid, pass, hidden) => {
   passFilled = "P:" + pass + ";";
   hiddenFilled = "H:" + hidden + ";";
 
-  QR.toFile("./qrcode.png", "WIFI:"+ authFilled + ssidFilled + passFilled + ";", {
-    type: "png",
-  });
+  QR.toFile("./qr-wifi-code.png", "WIFI:"+ authFilled + ssidFilled + passFilled + ";");
 }
 
 prompt.start();
@@ -65,4 +63,5 @@ prompt.get(schema, (err, result) => {
     return
   }
   generate(result.authentication, result.ssid, result.password, result.hidden);
+  console.log(`Created qr-code for network ${result.ssid}`);
 });
